@@ -139,6 +139,7 @@ body .global-menu-button {
 /* hover */
 .tree-floating-button:hover {
     background-color:#0784b5 !important;
+    color: #FFF !important;
 }
 
 /* backlinks menu */
@@ -146,6 +147,16 @@ body .global-menu-button {
     background-color: #121212 !important;
     color: #dedede !important;
     border: 1px solid #FFF !important;
+}
+
+/* launcher pane */
+/* icon hover */
+#launcher-pane .button-widget:hover {
+    color: #FFF !important;   
+}
+/* icons not caught by above rule */
+#launcher-pane .right-dropdown-widget button:hover {
+    color: #FFF !important;      
 }
 
 /* fix main left bar calendar picker */
