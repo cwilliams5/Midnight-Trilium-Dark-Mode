@@ -1,7 +1,8 @@
 # Midnight-Trilium-Dark-Mode
 A beautiful, material design inspired dark mode theme for Trilium. 
 
-Initially built against Trilium 0.49.5. Early versions not tested.
+Supported Trilium version: 0.50.1.
+Unsupported: Initially developed against 0.49.5, versions greater then that may work but only latest supported. Early versions than 0.49.5 not tested.
 
 ## Features
 * Material Design Based
