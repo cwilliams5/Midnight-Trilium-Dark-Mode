@@ -1,0 +1,255 @@
+/*
+Midnight - Trilium Dark Mode Theme
+https://github.com/cwilliams5/Midnight-Trilium-Dark-Mode
+License at End of File
+
+Built off trilium default base
+https://github.com/zadam/trilium/blob/master/src/public/stylesheets/theme-light.css
+
+Adjusted by me, using Google's material design guidelines and my thumb on the scale.
+https://material.io/design/color/dark-theme.htm
+*/
+
+/* -------------------- Import Fonts -------------------- */
+
+/* You should REALLY just install Inter and Fira Code:
+https://github.com/rsms/inter
+https://github.com/tonsky/FiraCode
+But this will try and import them if you dont have them */
+
+@import url('https://rsms.me/inter/inter.css');
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
+/* -------------------- Root Trillium Theme -------------------- */
+:root {
+    /* either light or dark, colored theme with darker tones are also dark, used e.g. for note map node colors */
+    --theme-style: dark;
+
+    --main-font-family: Inter;
+    --main-font-size: normal;
+
+    --tree-font-family: Inter;
+    --tree-font-size: normal;
+
+    --detail-font-family: Inter;
+    --detail-font-size: normal;
+
+    --monospace-font-family: Fira Code;
+    --monospace-font-size: normal;
+
+    --main-background-color: #121212;
+    --main-text-color: #dedede;
+    --main-border-color: #aaa; 
+
+    --accented-background-color: #033c53; /*  555 */
+    --more-accented-background-color: #0784b5;  /*  777 */
+
+    --button-background-color: transparent;
+    --button-disabled-background-color: #222;
+    --button-border-color: #ccc;
+    --button-text-color: currentColor;
+    --button-border-radius: 5px;
+
+    --primary-button-background-color: #888;
+    --primary-button-text-color: #FFF;
+    --primary-button-border-color: #999;
+
+    --muted-text-color: #bbb;
+
+    --input-text-color: #ccc;
+    --input-background-color: #333;
+
+    --hover-item-text-color: #dedede; /* launcher bar, menus, etc */
+    --hover-item-background-color: #0784b5; 
+
+    --active-item-text-color: #ddd;
+    --active-item-background-color: #033c53;
+
+    --menu-text-color: #dedede;
+    --menu-background-color: #222;
+
+    --modal-background-color: #333;
+    --modal-backdrop-color: #444;
+
+    --left-pane-background-color: #070707;
+    --left-pane-text-color: #dedede;
+
+    --launcher-pane-background-color: #1f1f1f;
+    --launcher-pane-text-color: #AAAAAA;
+
+    --active-tab-background-color: #033c53;
+    --active-tab-hover-background-color: #0784b5;
+    --active-tab-text-color: #ddd;
+
+    --inactive-tab-background-color: #2c2c2c;
+    --inactive-tab-hover-background-color: #0784b5;
+    --inactive-tab-text-color: #bbb;
+
+    --scrollbar-border-color: #888;
+    --tooltip-background-color: #333;
+    --link-color: #87CEFA;
+
+    --mermaid-theme: dark;
+}
+
+/* -------------------- Beyond Root -------------------- */
+
+/* That's all the official Trilium theme style gives us.
+But it still doesn't look good.
+We are going to have to get extracurricular. */
+
+/* switch app icons  */
+body .global-menu-button {
+    background-image: url("../../../images/icon-grey.png"); 
+}
+
+/* opened note tab borders */
+/* active */
+.note-tab[active] .note-tab-wrapper {
+    border: 1px solid rgba(187, 187, 187, 0.50);   
+}
+/* active hover */
+.note-tab[active] .note-tab-wrapper:hover {
+    border: 1px solid #FFF !important;
+    color: #FFF !important;
+}
+/* inactive */
+.note-tab:not([active]) .note-tab-wrapper {
+ 
+}
+/* inactive hover */
+.note-tab:not([active]) .note-tab-wrapper:hover {
+    border: 1px solid #FFF !important;
+    color: #FFF !important;
+}
+
+/* tree list items */
+/* hover */
+#ft-id-1 .fancytree-node:hover {
+    background-color:#0784b5;
+    color: #FFF !important;
+    border: 1px solid #FFF !important;
+}
+/* active */
+#ft-id-1 .fancytree-active {
+    border: 1px solid rgba(187, 187, 187, 0.50) !important;
+}
+
+/* floating tree buttons */
+/* hover */
+.tree-floating-button:hover {
+    background-color:#0784b5 !important;
+}
+
+/* backlinks menu */
+.backlinks-items {
+    background-color: #121212 !important;
+    color: #dedede !important;
+    border: 1px solid #FFF !important;
+}
+
+/* fix main left bar calendar picker */
+body ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* fix small calendar picker */
+/* well turns, best I can tell, this is a Chromium widget that can't be themed?
+https://developers.google.com/web/updates/2012/08/Quick-FAQs-on-input-type-date-in-Google-Chrome#how_do_i_change_the_appearance_of_the_date_picker
+I guess to theme it Trilium would need its own widget */
+
+/* -------------------- Fixing Code View -------------------- */
+
+/*
+Trilium uses Code Mirror. Code Mirror has themes!
+Code Mirror Themes can be previewed here:
+https://codemirror.net/demo/theme.html
+And the relevant code in their github, for example here is "material darker":
+https://github.com/codemirror/CodeMirror/blob/master/theme/material-darker.css
+We can't use this straight away in Trilium, we have to adapt it from the prefixed codemirror subtheme to the "default" code mirror theme Trilium expects. A find and replace like this does the job:
+.cm-s-material-darker” to “.cm-s-default”
+
+Hooray, now we can directly control the code theming!
+*/
+
+/*
+    Code Mirror Theme: acdef
+    Source: https://github.com/codemirror/CodeMirror/blob/master/theme/abcdef.css
+*/
+.cm-s-default.CodeMirror { background: #0f0f0f; color: #defdef; }
+.cm-s-default div.CodeMirror-selected { background: #515151; }
+.cm-s-default .CodeMirror-line::selection, .cm-s-default .CodeMirror-line > span::selection, .cm-s-default .CodeMirror-line > span > span::selection { background: rgba(56, 56, 56, 0.99); }
+.cm-s-default .CodeMirror-line::-moz-selection, .cm-s-default .CodeMirror-line > span::-moz-selection, .cm-s-default .CodeMirror-line > span > span::-moz-selection { background: rgba(56, 56, 56, 0.99); }
+.cm-s-default .CodeMirror-gutters { background: #555; border-right: 2px solid #314151; }
+.cm-s-default .CodeMirror-guttermarker { color: #222; }
+.cm-s-default .CodeMirror-guttermarker-subtle { color: azure; }
+.cm-s-default .CodeMirror-linenumber { color: #FFFFFF; }
+.cm-s-default .CodeMirror-cursor { border-left: 1px solid #00FF00; }
+
+.cm-s-default span.cm-keyword { color: darkgoldenrod; font-weight: bold; }
+.cm-s-default span.cm-atom { color: #77F; }
+.cm-s-default span.cm-number { color: violet; }
+.cm-s-default span.cm-def { color: #fffabc; }
+.cm-s-default span.cm-variable { color: #abcdef; }
+.cm-s-default span.cm-variable-2 { color: #cacbcc; }
+.cm-s-default span.cm-variable-3, .cm-s-default span.cm-type { color: #def; }
+.cm-s-default span.cm-property { color: #fedcba; }
+.cm-s-default span.cm-operator { color: #ff0; }
+.cm-s-default span.cm-comment { color: #7a7b7c; font-style: italic;}
+.cm-s-default span.cm-string { color: #2b4; }
+.cm-s-default span.cm-meta { color: #C9F; }
+.cm-s-default span.cm-qualifier { color: #FFF700; }
+.cm-s-default span.cm-builtin { color: #30aabc; }
+.cm-s-default span.cm-bracket { color: #8a8a8a; }
+.cm-s-default span.cm-tag { color: #FFDD44; }
+.cm-s-default span.cm-attribute { color: #DDFF00; }
+.cm-s-default span.cm-error { color: #FF0000; }
+.cm-s-default span.cm-header { color: aquamarine; font-weight: bold; }
+.cm-s-default span.cm-link { color: blueviolet; }
+
+.cm-s-default .CodeMirror-activeline-background { background: #314151; }
+
+/*
+Code Mirror theme overrides:
+Any part of the above Code Mirror theme we want to override
+*/
+.cm-s-default span.cm-comment { color: #8e9091; }
+
+/*
+Final Code Mirror Tweaks
+There are some things even the Code Mirror themes don't tackle that we really need to fix.
+*/
+
+/* the matching highlight looks very bad */
+.cm-matchhighlight {
+    background-color: #033c53 !important;
+}
+
+/*
+LICENSE
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <http://unlicense.org/>
+*/
