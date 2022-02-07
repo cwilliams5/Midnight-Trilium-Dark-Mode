@@ -159,6 +159,12 @@ body .global-menu-button {
     color: #FFF !important;      
 }
 
+/* text label in find and replace dialog */
+.ck-find-and-replace-form__find .ck-labeled-field-view .ck-labeled-field-view__input-wrapper label.ck-label {
+    background-color: #033c53 !important;
+    color: #dedede !important;  
+}
+
 /* fix main left bar calendar picker */
 body ::-webkit-calendar-picker-indicator {
     filter: invert(1);
