@@ -160,6 +160,9 @@ body .global-menu-button {
 }
 
 /* text label in find and replace dialog */
+/* Zadam used this to address this issue in Trillium proper:
+https://github.com/zadam/trilium/commit/83f8fac088f4bacbe9bed15637895f4b594fac14
+Leaving here for now because (1) works in older versions (2) provides control of text color not just bg color */
 .ck-find-and-replace-form__find .ck-labeled-field-view .ck-labeled-field-view__input-wrapper label.ck-label {
     background-color: #033c53 !important;
     color: #dedede !important;  
