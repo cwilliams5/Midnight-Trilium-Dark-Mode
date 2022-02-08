@@ -168,6 +168,16 @@ Leaving here for now because (1) works in older versions (2) provides control of
     color: #dedede !important;  
 }
 
+/* CKeditor find and replace highlights  */
+/* while I could customize highlight color, leave the same so it matches the other trilium find method
+But we should still update text color because are global whites look bad */
+.ck-find-result {
+    color: #000 !important;
+}
+.ck-find-result_selected {
+    color: #000 !important;
+}
+
 /* fix main left bar calendar picker */
 body ::-webkit-calendar-picker-indicator {
     filter: invert(1);
