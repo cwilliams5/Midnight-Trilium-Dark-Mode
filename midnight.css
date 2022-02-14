@@ -210,6 +210,34 @@ I guess to theme it Trilium would need its own widget */
     margin-right:0em !important;
 }
 
+/* -------------------- Extra Features -------------------- */
+
+/* Zen Mode !
+body.zen-mode #launcher-pane, body.zen-mode #left-pane, body.zen-mode .title-bar-buttons {
+    display:none !important;
+}
+*/
+
+/* Zen Mode Extreme */
+/* display:none friendly */
+body.zen-mode #launcher-pane, body.zen-mode #left-pane {
+    display:none !important;
+    height:0 !important;
+    width:0 !important:
+} 
+/* display:none not friendly - some of these have an interactivity lag when coming back from display:none so another method must be used */
+/* even this isn't 100% fix, delay still happens sometimes, but less often and for less length in time */
+body.zen-mode .title-bar-buttons, body.zen-mode .tab-row-widget, body.zen-mode .title-row, body.zen-mode .ribbon-top-row, body.zen-mode .gutter, body.zen-mode #rest-pane > div:nth-child(1) {
+    display:none !important;
+    height:0 !important;
+    width:0 !important:
+} 
+/* remove the margins we added in this theme for gutter comfort spacing during zen mode, because, well, there is no more gutter */
+body.zen-mode #center-pane {
+    margin-left:0em !important;
+    margin-right:0em !important;
+}
+
 /* -------------------- Fixing Code View -------------------- */
 
 /*
