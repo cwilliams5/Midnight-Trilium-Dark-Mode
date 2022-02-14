@@ -3,6 +3,10 @@ A beautiful, opinionated, material design inspired dark mode theme for Trilium w
 
 ![Midnight Screenshot](/img/midnight.png?raw=true "Midnight Screenshot")
 
+[![Supported Version](https://img.shields.io/badge/trilium-0.50.2-blue "Supported Trilium Version")](https://github.com/zadam/trilium)
+[![Open Issues](https://img.shields.io/github/issues/cwilliams5/Midnight-Trilium-Dark-Mode "Open Issues")](https://github.com/cwilliams5/Midnight-Trilium-Dark-Mode/issues)
+[![Open PRs](https://img.shields.io/github/issues-pr/cwilliams5/Midnight-Trilium-Dark-Mode "Open PRs")](https://github.com/cwilliams5/Midnight-Trilium-Dark-Mode/pulls)
+
 ## Features
 * Material Design Based
   * Comfortable Contrast
