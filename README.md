@@ -18,6 +18,7 @@ A beautiful, opinionated, material design inspired dark mode theme for Trilium w
   * More than even built in default themes and dark mode!
 * New Features
   * Zen Mode - focus solely on the note at hand
+   <img src="https://raw.githubusercontent.com/cwilliams5/Midnight-Trilium-Dark-Mode/main/zenmode.gif" width=50% height=50%>
 
 ## Support
 
@@ -35,12 +36,10 @@ Technically none, Midnight will try and fetch the fonts it uses from the web. Fo
 * Create a new note in Trilium, store it anywhere you would like.
 * Change note type to CSS.
 * Paste in the raw contents of [midnight.css](https://raw.githubusercontent.com/cwilliams5/Midnight-Trilium-Dark-Mode/main/midnight.css).
-* Add an owned attribute of ```#appTheme=Midnight"``` to the note.
+* Add an owned attribute of ```#appTheme=Midnight``` to the note.
 * Click the Trilium icon in the top left, select Options, and under theme select Midnight.
 
 ### Zen Mode
-
-<img src="https://raw.githubusercontent.com/cwilliams5/Midnight-Trilium-Dark-Mode/main/zenmode.gif" width=50% height=50%>
 
 Enable the optional Zen Mode. Remember the ```ALT + Z``` key combo to exit Zen Mode!
 * Create a new note in Trilium, store it anywhere you would like.
@@ -54,7 +53,7 @@ The code is laid out and commented for your easy customization. Change what you 
 
 ### Highly Opinionated
 As described, this is my daily theme and is highly opinionated to my desires. I created a "highly opiniated" section of the code for those changes I've made that I expect may be controversial. This will allow easy removal if you do not like. Here they are so far:
-* By default in Trilium notes have a max-width of 1200px. Midnight will override this to 100% with a slight margin for gutter comfort. If you don't like your notes too wide, feel free to remove.
+* By default, in Trilium notes have a max-width of 1200px. Midnight will override this to 100% with a slight margin for gutter comfort. If you don't like your notes too wide, feel free to remove.
 
 ### Zen Mode VS Extreme Zen Mode
 By default, "Extreme Zen Mode" is active, meaning Zen Mode removes *everything* but the note contents. If you would prefer that more of the note UI, such as attributes, tabs, splitter, etc, remain visible, comment out or remove the Extreme Zen Mode section and uncomment the Zen Mode section.
