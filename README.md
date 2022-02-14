@@ -1,4 +1,4 @@
-# Midnight-Trilium-Dark-Mode
+# Midnight - Trilium Dark Mode Theme
 A beautiful, opinionated, material design inspired dark mode theme for Trilium with extra features and [OCD level](https://github.com/zadam/trilium/issues/2639) attention to detail and style coverage. 
 
 ## Screenshot
