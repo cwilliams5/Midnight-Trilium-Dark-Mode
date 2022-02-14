@@ -51,7 +51,7 @@ The code is laid out and commented for your easy customization. Change what you 
 
 ### Highly Opinionated
 As described, this is my daily theme and is highly opinionated to my desires. I created a "highly opiniated" section of the code for those changes I've made that I expect may be controversial. This will allow easy removal if you do not like. Here they are so far:
-* Notes have a max-width of 1200px. Midnight will overight this to 100% with a slight margin for gutter comfort. If you don't like your notes too wide, feel free to remove.
+* By default in Trilium notes have a max-width of 1200px. Midnight will override this to 100% with a slight margin for gutter comfort. If you don't like your notes too wide, feel free to remove.
 
 ### Zen Mode VS Extreme Zen Mode
 By default, "Extreme Zen Mode" is active, meaning Zen Mode removes *everything* but the note contents. If you would prefer that more of the note UI, such as attributes, tabs, splitter, etc, remain visible, comment out or remove the Extreme Zen Mode section and uncomment the Zen Mode section.
