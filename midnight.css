@@ -200,6 +200,16 @@ body ::-webkit-calendar-picker-indicator {
 https://developers.google.com/web/updates/2012/08/Quick-FAQs-on-input-type-date-in-Google-Chrome#how_do_i_change_the_appearance_of_the_date_picker
 I guess to theme it Trilium would need its own widget */
 
+/* -------------------- Highly Opinionated -------------------- */
+/* allow max width notes, but add slight side margins for gutter comfort */
+.note-split {
+    max-width:100% !important;
+}
+#center-pane {
+    margin-left:0.5em !important;
+    margin-right:0em !important;
+}
+
 /* -------------------- Fixing Code View -------------------- */
 
 /*
