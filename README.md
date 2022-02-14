@@ -39,6 +39,9 @@ Technically none, Midnight will try and fetch the fonts it uses from the web. Fo
 * Click the Trilium icon in the top left, select Options, and under theme select Midnight.
 
 ### Zen Mode
+
+<img src="https://raw.githubusercontent.com/cwilliams5/Midnight-Trilium-Dark-Mode/main/zenmode.gif" width=50% height=50%>
+
 Enable the optional Zen Mode. Remember the ```ALT + Z``` key combo to exit Zen Mode!
 * Create a new note in Trilium, store it anywhere you would like.
 * Change note type to JS Frontend.
