@@ -226,9 +226,8 @@ body.zen-mode #launcher-pane, body.zen-mode #left-pane {
     width:0 !important:
 } 
 /* display:none not friendly - some of these have an interactivity lag when coming back from display:none so another method must be used */
-/* even this isn't 100% fix, delay still happens sometimes, but less often and for less length in time */
-body.zen-mode .title-bar-buttons, body.zen-mode .tab-row-widget, body.zen-mode .title-row, body.zen-mode .ribbon-top-row, body.zen-mode .gutter, body.zen-mode #rest-pane > div:nth-child(1) {
-    display:none !important;
+body.zen-mode .title-bar-buttons, body.zen-mode .tab-row-widget, body.zen-mode .title-row, body.zen-mode .ribbon-container, body.zen-mode .gutter, body.zen-mode #rest-pane > div:nth-child(1) {
+    visibility: hidden !important;
     height:0 !important;
     width:0 !important:
 } 
