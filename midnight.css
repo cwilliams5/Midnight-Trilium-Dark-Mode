@@ -178,6 +178,18 @@ But we should still update text color because are global whites look bad */
     color: #000 !important;
 }
 
+/* attempt a grid layout for basic properties */
+.basic-properties-widget {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(210px, max-content))  !important;
+}
+
+/* attempt a grid layout for promoted attributes */
+.promoted-attributes-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(400px, max-content))  !important;
+}
+
 /* fix main left bar calendar picker */
 body ::-webkit-calendar-picker-indicator {
     filter: invert(1);
