@@ -21,7 +21,7 @@ A beautiful, opinionated, material design inspired dark mode theme for Trilium w
   * More than even built in default themes and dark mode!
 * New Features
   * Zen Mode - focus solely on the note at hand
-   <img src="https://raw.githubusercontent.com/cwilliams5/Midnight-Trilium-Dark-Mode/main/img/zenmode.gif" title="Zen Mode example" width=50% height=50%>
+   <img src="https://raw.githubusercontent.com/cwilliams5/Midnight-Trilium-Dark-Mode/main/img/zenmode.gif" title="Zen Mode example" width=600px>
 
 ## Support
 
