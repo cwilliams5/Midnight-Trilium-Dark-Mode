@@ -49,7 +49,7 @@ Enable the optional Zen Mode. Remember the ```ALT + Z``` key combo to exit Zen M
 * Click the Trilium icon in the top left, select Reload frontend, or press ```F5``` to reload the front end.
 
 ## Customization
-The code is laid out and commented for your easy customization. Change what you want, delete what you want. Let me know anything interesting you think is valuable for the core.
+The code is laid out and commented for your easy customization. Change what you want, delete what you want. Let me know anything interesting you think is valuable for the core. Pull requests welcome!
 
 ### Highly Opinionated
 As described, this is my daily theme and is highly opinionated to my desires. I created a "highly opiniated" section of the code for those changes I've made that I expect may be controversial. This will allow easy removal if you do not like. Here they are so far:
