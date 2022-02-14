@@ -1,7 +1,7 @@
 # Midnight - Trilium Dark Mode Theme
 A beautiful, opinionated, material design inspired dark mode theme for Trilium with extra features and [OCD level](https://github.com/zadam/trilium/issues/2639) attention to detail and style coverage. 
 
-![Midnight Screenshot](midnight.png?raw=true "Midnight Screenshot")
+![Midnight Screenshot](/img/midnight.png?raw=true "Midnight Screenshot")
 
 ## Features
 * Material Design Based
@@ -17,7 +17,7 @@ A beautiful, opinionated, material design inspired dark mode theme for Trilium w
   * More than even built in default themes and dark mode!
 * New Features
   * Zen Mode - focus solely on the note at hand
-   <img src="https://raw.githubusercontent.com/cwilliams5/Midnight-Trilium-Dark-Mode/main/zenmode.gif" width=50% height=50%>
+   <img src="https://raw.githubusercontent.com/cwilliams5/Midnight-Trilium-Dark-Mode/main/img/zenmode.gif" title="Zen Mode example" width=50% height=50%>
 
 ## Support
 
