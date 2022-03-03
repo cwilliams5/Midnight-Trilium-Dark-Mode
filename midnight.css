@@ -63,7 +63,7 @@ But this will try and import them if you dont have them */
     --hover-item-background-color: #0784b5; 
 
     --active-item-text-color: #ddd;
-    --active-item-background-color: #033c53;
+    --active-item-background-color: #0784b5;
 
     --menu-text-color: #dedede;
     --menu-background-color: #222;
@@ -188,6 +188,14 @@ But we should still update text color because are global whites look bad */
 .promoted-attributes-container {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(400px, max-content))  !important;
+}
+
+/* @note link popup highlights
+for some reason if I try a less specific selector the bg and border work but not the font color. */
+body > div.ck-body-wrapper > div > div.ck.ck-balloon-panel.ck-balloon-panel_caret_se.ck-balloon-panel_visible > div > div.ck-balloon-rotator__content > ul > li > button.ck-on {
+    background-color:#0784b5 !important;
+    color: #FFF !important;
+    border: 1px solid #FFF !important;  
 }
 
 /* fix main left bar calendar picker */
